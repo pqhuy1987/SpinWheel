@@ -11,6 +11,7 @@
 @interface ANViewController () {
     UIImage *kindWheel;
     int wheelId;
+    UIImageView *pointView;
 }
 
 @end
@@ -28,8 +29,8 @@
     [imageWheel setDrag:1];
     [self.view addSubview:imageWheel];
     
-    UIImageView *pointView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pointImg"]];
-    pointView.frame = CGRectMake(0, 0, 100, 60);
+    pointView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"chaibia"]];
+    pointView.frame = CGRectMake(0, 0, 100, 50);
     pointView.center = imageWheel.center;
     [self.view addSubview:pointView];
     
@@ -50,6 +51,10 @@
     }
     else {
         wheelId = 1;
+    }
+    
+    if (wheelId == 3) {
+        pointView.transform = CGAffineTransformMakeRotation(M_PI);
     }
 
     kindWheel = [UIImage imageNamed:[NSString stringWithFormat:@"fortune%d",wheelId]];
