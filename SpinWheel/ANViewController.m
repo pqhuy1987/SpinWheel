@@ -8,7 +8,10 @@
 
 #import "ANViewController.h"
 
-@interface ANViewController ()
+@interface ANViewController () {
+    UIImage *kindWheel;
+    int wheelId;
+}
 
 @end
 
@@ -16,12 +19,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    wheelId = 1;
+    kindWheel = [UIImage imageNamed:@"fortune1.png"];
 	// Do any additional setup after loading the view, typically from a nib.
-    imageWheel = [[ANImageWheel alloc] initWithFrame:CGRectMake(10, 30, 300, 300)];
-    [imageWheel setImage:[UIImage imageNamed:@"fortune.png"]];
+    imageWheel = [[ANImageWheel alloc] initWithFrame:CGRectMake(10, 60, 300, 300)];
+    [imageWheel setImage:kindWheel];
     [imageWheel startAnimating:self];
     [imageWheel setDrag:1];
     [self.view addSubview:imageWheel];
+    
+    UIImageView *pointView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pointImg"]];
+    pointView.frame = CGRectMake(0, 0, 100, 60);
+    pointView.center = imageWheel.center;
+    [self.view addSubview:pointView];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button addTarget:self
+               action:@selector(selectWheel)
+     forControlEvents:UIControlEventTouchUpInside];
+    [button setBackgroundImage:[UIImage imageNamed:@"changeImg"] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    button.frame = CGRectMake(0, 0, 60.0, 60.0);
+    button.center = CGPointMake(imageWheel.center.x, self.view.frame.size.height - 100);
+    [self.view addSubview:button];
+}
+
+-  (void)selectWheel {
+    if (wheelId <3) {
+        wheelId++;
+    }
+    else {
+        wheelId = 1;
+    }
+
+    kindWheel = [UIImage imageNamed:[NSString stringWithFormat:@"fortune%d",wheelId]];
+    [imageWheel setImage:kindWheel];
 }
 
 - (void)viewDidUnload
