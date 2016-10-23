@@ -314,7 +314,7 @@
 				GCC_PREFIX_HEADER = "SpinWheel/SpinWheel-Prefix.pch";
 				INFOPLIST_FILE = "SpinWheel/SpinWheel-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aqnichol.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.quaybia.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -329,7 +329,7 @@
 				GCC_PREFIX_HEADER = "SpinWheel/SpinWheel-Prefix.pch";
 				INFOPLIST_FILE = "SpinWheel/SpinWheel-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aqnichol.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.quaybia.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
