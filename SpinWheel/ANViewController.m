@@ -27,7 +27,9 @@
     [imageWheel setImage:kindWheel];
     [imageWheel startAnimating:self];
     [imageWheel setDrag:1];
+    imageWheel.center = CGPointMake(self.view.center.x, imageWheel.center.y);
     [self.view addSubview:imageWheel];
+    
     
     pointView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"chaibia"]];
     pointView.frame = CGRectMake(0, 0, 100, 50);
