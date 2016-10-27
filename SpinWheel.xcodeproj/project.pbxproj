@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		97F035091DBB0AF7003D8012 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97F035081DBB0AF7003D8012 /* Default-568h@2x.png */; };
 		97F0350B1DBB451E003D8012 /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97F0350A1DBB451E003D8012 /* image.xcassets */; };
+		A83405DC583F6CACE73484EF /* libPods-SpinWheel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D67DE602DA7FE0FD191A801B /* libPods-SpinWheel.a */; };
 		FA6A8F471597D31800E9634D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A8F461597D31800E9634D /* UIKit.framework */; };
 		FA6A8F491597D31800E9634D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A8F481597D31800E9634D /* Foundation.framework */; };
 		FA6A8F4B1597D31800E9634D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A8F4A1597D31800E9634D /* CoreGraphics.framework */; };
@@ -24,8 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64FAC044B8AC75450D28C566 /* Pods-SpinWheel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinWheel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpinWheel/Pods-SpinWheel.debug.xcconfig"; sourceTree = "<group>"; };
+		6B522BA22318DEF51211BCE2 /* Pods-SpinWheel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpinWheel.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpinWheel/Pods-SpinWheel.release.xcconfig"; sourceTree = "<group>"; };
 		97F035081DBB0AF7003D8012 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		97F0350A1DBB451E003D8012 /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = image.xcassets; path = ../image.xcassets; sourceTree = "<group>"; };
+		D67DE602DA7FE0FD191A801B /* libPods-SpinWheel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SpinWheel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6A8F421597D31800E9634D /* SpinWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6A8F461597D31800E9634D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FA6A8F481597D31800E9634D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,12 +60,22 @@
 				FA6A8F471597D31800E9634D /* UIKit.framework in Frameworks */,
 				FA6A8F491597D31800E9634D /* Foundation.framework in Frameworks */,
 				FA6A8F4B1597D31800E9634D /* CoreGraphics.framework in Frameworks */,
+				A83405DC583F6CACE73484EF /* libPods-SpinWheel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65A3CD8DA2C6E51BE2AB4BE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64FAC044B8AC75450D28C566 /* Pods-SpinWheel.debug.xcconfig */,
+				6B522BA22318DEF51211BCE2 /* Pods-SpinWheel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FA6A8F371597D31800E9634D = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +83,7 @@
 				FA6A8F4C1597D31800E9634D /* SpinWheel */,
 				FA6A8F451597D31800E9634D /* Frameworks */,
 				FA6A8F431597D31800E9634D /* Products */,
+				65A3CD8DA2C6E51BE2AB4BE9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +102,7 @@
 				FA6A8F461597D31800E9634D /* UIKit.framework */,
 				FA6A8F481597D31800E9634D /* Foundation.framework */,
 				FA6A8F4A1597D31800E9634D /* CoreGraphics.framework */,
+				D67DE602DA7FE0FD191A801B /* libPods-SpinWheel.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA6A8F631597D31800E9634D /* Build configuration list for PBXNativeTarget "SpinWheel" */;
 			buildPhases = (
+				6BDCF55319F2209122C4AECE /* [CP] Check Pods Manifest.lock */,
 				FA6A8F3E1597D31800E9634D /* Sources */,
 				FA6A8F3F1597D31800E9634D /* Frameworks */,
 				FA6A8F401597D31800E9634D /* Resources */,
+				A7AE9C5BE618226570A3386F /* [CP] Embed Pods Frameworks */,
+				67C46D8F7F89CC07CDDFED5B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,6 +205,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67C46D8F7F89CC07CDDFED5B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpinWheel/Pods-SpinWheel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BDCF55319F2209122C4AECE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A7AE9C5BE618226570A3386F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpinWheel/Pods-SpinWheel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA6A8F3E1597D31800E9634D /* Sources */ = {
@@ -307,6 +374,7 @@
 		};
 		FA6A8F641597D31800E9634D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64FAC044B8AC75450D28C566 /* Pods-SpinWheel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JQNK74493B;
@@ -322,6 +390,7 @@
 		};
 		FA6A8F651597D31800E9634D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B522BA22318DEF51211BCE2 /* Pods-SpinWheel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JQNK74493B;
