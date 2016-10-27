@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>1006619316378-ma06tfprhssv7vrii6hacpo4an7m27ns.apps.googleusercontent.com</string>
+	<string>1027445354238-mgje4njl7nhb8ne2f9ssrb5ktl41dd9f.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1006619316378-ma06tfprhssv7vrii6hacpo4an7m27ns</string>
+	<string>com.googleusercontent.apps.1027445354238-mgje4njl7nhb8ne2f9ssrb5ktl41dd9f</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDpB0lWiRaXDwfaNwjNrrbn1iadJupokw8</string>
+	<string>AIzaSyD77e7UlRDlSeiOhymGDF7VwL_u3JvdR8A</string>
 	<key>GCM_SENDER_ID</key>
-	<string>1006619316378</string>
+	<string>1027445354238</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.twokingstudio.zingbox.100</string>
+	<string>com.twokingstudio.quaybia.100</string>
 	<key>PROJECT_ID</key>
-	<string>zingbox-97890</string>
+	<string>uongbia-92613</string>
 	<key>STORAGE_BUCKET</key>
-	<string>zingbox-97890.appspot.com</string>
+	<string>uongbia-92613.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1006619316378:ios:3b9cf271bafe8b3f</string>
+	<string>1:1027445354238:ios:8d82e21bfb105438</string>
 	<key>DATABASE_URL</key>
-	<string>https://zingbox-97890.firebaseio.com</string>
+	<string>https://uongbia-92613.firebaseio.com</string>
 </dict>
 </plist>

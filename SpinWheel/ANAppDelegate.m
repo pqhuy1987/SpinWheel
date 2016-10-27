@@ -18,7 +18,7 @@
 {
     // Override point for customization after application launch.
     [FIRApp configure];
-    [GADMobileAds configureWithApplicationID:@"ca-app-pub-5722562744549789~7310880950"];
+    [GADMobileAds configureWithApplicationID:@"ca-app-pub-5722562744549789~3003275754"];
     return YES;
 }
 							

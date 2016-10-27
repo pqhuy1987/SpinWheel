@@ -9,7 +9,7 @@
 #import "ANViewController.h"
 
 
-#define ADID @"ca-app-pub-5722562744549789/1264347356"
+#define ADID @"ca-app-pub-5722562744549789/4480008957"
 
 @interface ANViewController () {
     UIImage *kindWheel;
