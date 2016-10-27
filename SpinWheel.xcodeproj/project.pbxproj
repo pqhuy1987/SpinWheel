@@ -18,7 +18,6 @@
 		FA6A8F531597D31800E9634D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6A8F521597D31800E9634D /* main.m */; };
 		FA6A8F571597D31800E9634D /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6A8F561597D31800E9634D /* ANAppDelegate.m */; };
 		FA6A8F5A1597D31800E9634D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8F581597D31800E9634D /* MainStoryboard_iPhone.storyboard */; };
-		FA6A8F5D1597D31800E9634D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6A8F5B1597D31800E9634D /* MainStoryboard_iPad.storyboard */; };
 		FA6A8F601597D31800E9634D /* ANViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6A8F5F1597D31800E9634D /* ANViewController.m */; };
 		FA6A8F681597D32300E9634D /* ANSpinWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6A8F671597D32300E9634D /* ANSpinWheel.m */; };
 		FAEBB0CA1597DCBA00DAFE00 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEBB0C91597DCBA00DAFE00 /* QuartzCore.framework */; };
@@ -43,7 +42,6 @@
 		FA6A8F551597D31800E9634D /* ANAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANAppDelegate.h; sourceTree = "<group>"; };
 		FA6A8F561597D31800E9634D /* ANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANAppDelegate.m; sourceTree = "<group>"; };
 		FA6A8F591597D31800E9634D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		FA6A8F5C1597D31800E9634D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		FA6A8F5E1597D31800E9634D /* ANViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANViewController.h; sourceTree = "<group>"; };
 		FA6A8F5F1597D31800E9634D /* ANViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANViewController.m; sourceTree = "<group>"; };
 		FA6A8F661597D32300E9634D /* ANSpinWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSpinWheel.h; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 				FA6A8F551597D31800E9634D /* ANAppDelegate.h */,
 				FA6A8F561597D31800E9634D /* ANAppDelegate.m */,
 				FA6A8F581597D31800E9634D /* MainStoryboard_iPhone.storyboard */,
-				FA6A8F5B1597D31800E9634D /* MainStoryboard_iPad.storyboard */,
 				FA6A8F5E1597D31800E9634D /* ANViewController.h */,
 				FA6A8F5F1597D31800E9634D /* ANViewController.m */,
 				FA6A8F4D1597D31800E9634D /* Supporting Files */,
@@ -201,7 +198,6 @@
 			files = (
 				FA6A8F511597D31800E9634D /* InfoPlist.strings in Resources */,
 				FA6A8F5A1597D31800E9634D /* MainStoryboard_iPhone.storyboard in Resources */,
-				FA6A8F5D1597D31800E9634D /* MainStoryboard_iPad.storyboard in Resources */,
 				97F0350B1DBB451E003D8012 /* image.xcassets in Resources */,
 				97F035091DBB0AF7003D8012 /* Default-568h@2x.png in Resources */,
 				122DA5821DC23A6D00F4873C /* GoogleService-Info.plist in Resources */,
@@ -288,14 +284,6 @@
 				FA6A8F591597D31800E9634D /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		FA6A8F5B1597D31800E9634D /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA6A8F5C1597D31800E9634D /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

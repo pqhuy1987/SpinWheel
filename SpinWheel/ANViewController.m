@@ -41,7 +41,7 @@
     [imageWheel setImage:kindWheel];
     [imageWheel startAnimating:self];
     [imageWheel setDrag:1];
-    imageWheel.center = CGPointMake(self.view.center.x, imageWheel.center.y);
+    imageWheel.center = CGPointMake(self.view.center.x, imageWheel.center.y + 40);
     [self.view addSubview:imageWheel];
     
     
@@ -72,7 +72,11 @@
     if (wheelId == 3) {
         pointView.transform = CGAffineTransformMakeRotation(M_PI);
     }
-
+    
+    [self interstisal];
+    
+    [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
+    
     kindWheel = [UIImage imageNamed:[NSString stringWithFormat:@"fortune%d",wheelId]];
     [imageWheel setImage:kindWheel];
 }
