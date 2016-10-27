@@ -89,8 +89,8 @@
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     CGPoint thePoint = [[touches anyObject] locationInView:self];
     [self pushTouchPoint:thePoint date:[NSDate date]];
-    double angleDif = [self angleForPoint:thePoint] - [self angleForPoint:initialPoint];
-    self.angle = initialAngle + angleDif;
+    //double angleDif = [self angleForPoint:thePoint] - [self angleForPoint:initialPoint];
+    self.angle = initialAngle /* + angleDif*/;
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
