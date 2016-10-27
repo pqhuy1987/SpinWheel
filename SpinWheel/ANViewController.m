@@ -57,6 +57,8 @@
     
     if (wheelId == 3) {
         pointView.transform = CGAffineTransformMakeRotation(M_PI);
+    } else {
+        pointView.transform = CGAffineTransformIdentity;
     }
 
     kindWheel = [UIImage imageNamed:[NSString stringWithFormat:@"fortune%d",wheelId]];
