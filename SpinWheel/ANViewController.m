@@ -5,8 +5,11 @@
 //  Created by Alex Nichol on 6/24/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
-
+@import GoogleMobileAds;
 #import "ANViewController.h"
+
+
+#define ADID @"ca-app-pub-5722562744549789/1264347356"
 
 @interface ANViewController () {
     UIImage *kindWheel;
@@ -16,10 +19,21 @@
 
 @end
 
+@interface ANViewController ()<GADInterstitialDelegate>
+
+@property (nonatomic, strong) GADInterstitial *interstitial;
+
+@end
+
 @implementation ANViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self interstisal];
+    
+    [self performSelector:@selector(LoadInterstitialAds) withObject:self afterDelay:1.0];
+
     wheelId = 1;
     kindWheel = [UIImage imageNamed:@"fortune1.png"];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -75,6 +89,24 @@
         return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
     } else {
         return YES;
+    }
+}
+
+-(void)interstisal{
+    self.interstitial = [[GADInterstitial alloc] initWithAdUnitID:ADID];
+    
+    self.interstitial.delegate = self;
+    
+    GADRequest *request = [GADRequest request];
+    
+    [self.interstitial loadRequest:request];
+    
+}
+
+-(void)LoadInterstitialAds{
+    
+    if (self.interstitial.isReady) {
+        [self.interstitial presentFromRootViewController:self];
     }
 }
 

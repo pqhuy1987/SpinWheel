@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ANImageWheel.h"
+@import GoogleMobileAds;
 
 @interface ANViewController : UIViewController {
     ANImageWheel * imageWheel;
