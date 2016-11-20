@@ -390,10 +390,10 @@
 				GCC_PREFIX_HEADER = "SpinWheel/SpinWheel-Prefix.pch";
 				INFOPLIST_FILE = "SpinWheel/SpinWheel-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.drinkingwheel.100;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.drinkingparty.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "27dc46f1-5550-4fd5-9cf2-30736f8991e2";
-				PROVISIONING_PROFILE_SPECIFIER = "Drinking Wheel";
+				PROVISIONING_PROFILE = "0a39ccce-3958-4ba6-830e-4fb071308a77";
+				PROVISIONING_PROFILE_SPECIFIER = "Drinking Party";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -411,10 +411,10 @@
 				GCC_PREFIX_HEADER = "SpinWheel/SpinWheel-Prefix.pch";
 				INFOPLIST_FILE = "SpinWheel/SpinWheel-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.drinkingwheel.100;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.drinkingparty.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "27dc46f1-5550-4fd5-9cf2-30736f8991e2";
-				PROVISIONING_PROFILE_SPECIFIER = "Drinking Wheel";
+				PROVISIONING_PROFILE = "0a39ccce-3958-4ba6-830e-4fb071308a77";
+				PROVISIONING_PROFILE_SPECIFIER = "Drinking Party";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
