@@ -22,8 +22,8 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="TOUCH BUTTON TO CHANGE THE WHEEL" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yr5-Sl-6ZM">
-                                <rect key="frame" x="10" y="627" width="355" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="10" y="612" width="355" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="wwp-8C-1fM"/>
                                 </constraints>
@@ -32,8 +32,8 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="SWIPE RIGHT OR LEFT TO SPIN" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8n-oY-9hs">
-                                <rect key="frame" x="10" y="10" width="355" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="10" y="27" width="355" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ifl-fe-cIh"/>
                                 </constraints>
@@ -41,11 +41,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Rvt-eV-ZVW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99990516900000004" green="1" blue="0.99987047910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hxw-dg-7fi" firstAttribute="top" secondItem="yr5-Sl-6ZM" secondAttribute="bottom" constant="10" id="0GK-Ul-XJ2"/>
-                            <constraint firstItem="o8n-oY-9hs" firstAttribute="top" secondItem="3" secondAttribute="top" constant="10" id="1TS-uT-28T"/>
+                            <constraint firstItem="hxw-dg-7fi" firstAttribute="top" secondItem="yr5-Sl-6ZM" secondAttribute="bottom" constant="25" id="0GK-Ul-XJ2"/>
+                            <constraint firstItem="o8n-oY-9hs" firstAttribute="top" secondItem="3" secondAttribute="top" constant="27" id="1TS-uT-28T"/>
                             <constraint firstAttribute="trailing" secondItem="yr5-Sl-6ZM" secondAttribute="trailing" constant="10" id="IAA-1T-ZAg"/>
                             <constraint firstItem="o8n-oY-9hs" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="10" id="TcL-mM-RGq"/>
                             <constraint firstItem="yr5-Sl-6ZM" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="10" id="V0A-On-t8S"/>
@@ -55,9 +59,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26" y="33"/>
+            <point key="canvasLocation" x="25.5" y="32.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="621" height="1104"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
