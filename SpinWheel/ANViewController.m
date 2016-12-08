@@ -37,11 +37,11 @@
     wheelId = 1;
     kindWheel = [UIImage imageNamed:@"fortune1.png"];
 	// Do any additional setup after loading the view, typically from a nib.
-    imageWheel = [[ANImageWheel alloc] initWithFrame:CGRectMake(10, 60, 300, 300)];
+    imageWheel = [[ANImageWheel alloc] initWithFrame:CGRectMake(10, 60, self.view.frame.size.width - 100, self.view.frame.size.width - 100)];
     [imageWheel setImage:kindWheel];
     [imageWheel startAnimating:self];
     [imageWheel setDrag:1];
-    imageWheel.center = CGPointMake(self.view.center.x, imageWheel.center.y + 40);
+    imageWheel.center = CGPointMake(self.view.frame.size.width/2, imageWheel.center.y + 40);
     [self.view addSubview:imageWheel];
     
     
